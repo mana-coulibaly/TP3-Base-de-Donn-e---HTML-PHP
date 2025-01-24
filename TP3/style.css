@@ -1,0 +1,412 @@
+/*Feuille de style*/
+
+/* HTML */
+
+.liststyle{
+    height: 50%;
+    list-style: none;
+    padding: 5px;
+    margin: 0px;
+    border: 1px solid black;
+    border-radius: 6px;
+    /*display: block;*/
+}
+.liststyle li{
+    height: auto;
+    width: 100.01%;
+    padding: 0;
+    margin: 0;
+}
+.liststyle a{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    
+}
+.liststyle li:hover,
+a:hover {
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    /*display: block;*/
+}
+
+.liststyle li ul {
+    display: none;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.liststyle li:hover ul {
+    display: block;
+    position: relative;
+}
+.liststyle li ul li a {
+    border: 1px black solid;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+}
+.divi1 {
+padding: 10px;
+border: 1px solid;
+border-radius: 6px;
+width: 100%;
+}
+.tbl1{
+    width: 100%;
+    border-collapse: collapse;
+}
+.tbl1 td{
+    width: 70%;
+    border: none;
+}
+.divi2{
+width:18%;
+position: absolute; 
+margin-top: 8px;
+}
+.divi3 {
+padding: 10px;
+border: 1px solid;
+border-radius: 6px;
+width: 80.5%;
+position: absolute;
+margin-left: 284px;
+margin-top: 8px;
+margin-bottom: 50px;
+}
+.tbl3{ 
+    width: 100%;
+    border-collapse: collapse;
+}
+.tbl3 th, td{
+border: 1px solid black;
+font-weight: normal;
+
+}
+.tbl3 td{
+    padding: 5px;
+}
+.trg{
+    background-color: lightgray;
+    color: white;
+    
+}
+.divi2 li:nth-of-type(2){
+    border-top: 1px black solid;
+    display: block;
+}
+.divi2 li:nth-of-type(3){
+    border-top: 1px black solid;
+    display: block;
+}
+
+.divi2 ul{
+    padding: 0;
+}
+.divi2-div3{
+    display: flex;
+}
+.sous-menu{
+    width: 100%;
+    list-style: none;
+    display: none;
+    position: absolute;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+textarea{
+    height:200px
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-75 {
+    width: 50%;
+    display: inline-flex;
+}
+.col-username {
+    width: 25%;
+}
+
+.col-password {
+    width: 25%;
+}
+
+
+.buttons{
+    display: flex;
+    width: 100%;
+}
+
+.buttons input{
+    margin: 5px;
+}
+
+.input{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: 1px black solid;
+    border-radius: 5px;
+    margin: 10px;
+    margin-left: 0;
+}
+.inputpassword{
+    width: 20%;
+    margin: 10px;
+}
+.inputformulaire{
+    width: 20%;
+    margin: 10px;
+}
+
+p{
+    width: 100%;
+}
+
+/* PHP */
+.divphp{
+    width: 100%;
+    display: inline-flex;
+}
+
+.divi3Admin {
+    width: 80%;
+    margin-top: 10px;
+}
+
+.tablephp{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px black solid;
+}
+.table2php{						/* encadrement du tableau */
+    border: 1px solid black;
+    width: 80%;    /* et de chaque cellule */
+}
+
+.tablephp th, td{
+    border: 1px solid black;
+}
+
+.tablephp td{
+    padding: 5px;
+}
+
+.th{
+ background-color: lightgrey;
+ color: black; 
+}
+.idcolumn{
+    padding-left: 10;
+    padding-right: 10;
+}
+
+.divbuttons{
+    width: 20%;
+    text-align: end;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.supprimer{
+    background-color: red;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+.deconnecter{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: orange;
+    border: 1px black solid;
+    border-radius: 10px;
+    padding: 5;
+    margin-bottom: 35px;
+}
+
+.activite{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: greenyellow;
+    border: 1px black solid;
+    border-radius: 10px;
+    padding: 5;
+}
+
+.formulaire{
+    border: 2px black solid;
+    width: 80%;
+    margin-top: 30px;
+}
+
+.tabformulaire{
+    width: 100%;
+}
+
+.tabformulaire th{
+    border: 2px black solid;
+    border-collapse: separate;
+}
+.message{
+    background: #d35400;
+    color:white;
+    padding: 5px;
+}
+/* progress Bar */
+.rt-container {
+    margin: 0 auto;
+    /* padding-left:12px;
+	padding-right:12px; */
+}
+
+/* Responsive layout */
+@media all and (max-width: 800px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .tbl1 img{width: 100%;}
+    .divi1{width: auto;}
+    .divi2{margin-top: 10px; width: auto; max-width: 100%;}
+    .divi3{margin-top: 10px; width: auto;max-width: 100%; margin-left: 192px;}
+    .liststyle{width: auto; list-style: none;}
+}
+
+
+.radialProgressBar {
+    /* border-radius: 50%;
+    -webkit-transform: translate(50%, 50%);
+    transform: translate(50%, 50%);
+    width: 100px;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #ddd;
+    margin: 20px;
+    float: left; */
+
+    margin: auto;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: -ms-flexbox;
+    display: flex;
+    background: #ddd;
+
+}
+
+.radialProgressBar .overlay {
+    border-radius: 50%;
+    width: 80px;
+    height: 49px;
+    margin: auto;
+    background: #fff;
+    text-align: center;
+    padding-top:  30%;
+}
+:root {
+    --color-grey: #c8c8c8;
+    --color-dark: #000;
+    --color-white: #fff;
+    --color-pink: #ffbe98;
+    --color-green: #caff98;
+    --color-red: #f76d6d;
+}
+
+.progress-0 {
+    background-image: -webkit-linear-gradient(left, var(--color-white) 50%, transparent 50%), -webkit-linear-gradient(left, #ffa500 50%, var(--color-white) 50%);
+    background-image: linear-gradient(90deg, var(--color-white) 50%, transparent 50%), linear-gradient(90deg, #ffa500 50%, var(--color-white) 50%);
+}
+
+.progress-10 {
+    background-image: -webkit-linear-gradient(36deg, var(--color-white) 50%, transparent 50%), -webkit-linear-gradient(left, #ffa500 50%, var(--color-white) 50%);
+    background-image: linear-gradient(54deg, var(--color-white) 50%, transparent 50%), linear-gradient(90deg, #ffa500 50%, var(--color-white) 50%);
+}
+
+.progress-20 {
+    background-image: -webkit-linear-gradient(72deg, var(--color-white) 50%, transparent 50%), -webkit-linear-gradient(left, #ffa500 50%, var(--color-white) 50%);
+    background-image: linear-gradient(18deg, var(--color-white) 50%, transparent 50%), linear-gradient(90deg, #ffa500 50%, var(--color-white) 50%);
+}
+
+.progress-30 {
+    background-image: -webkit-linear-gradient(108deg, var(--color-white) 50%, transparent 50%), -webkit-linear-gradient(left, #ffa500 50%, var(--color-white) 50%);
+    background-image: linear-gradient(-18deg, var(--color-white) 50%, transparent 50%), linear-gradient(90deg, #ffa500 50%, var(--color-white) 50%);
+}
+
+.progress-40 {
+    background-image: -webkit-linear-gradient(144deg, var(--color-white) 50%, transparent 50%), -webkit-linear-gradient(left, #ffa500 50%, var(--color-white) 50%);
+    background-image: linear-gradient(-54deg, var(--color-white) 50%, transparent 50%), linear-gradient(90deg, #ffa500 50%, var(--color-white) 50%);
+}
+
+
+.progress-50 {
+    background-image: -webkit-linear-gradient(right, var(--color-white) 50%, transparent 50%), -webkit-linear-gradient(left, #ffa500 50%, var(--color-white) 50%);
+    background-image: linear-gradient(-90deg, var(--color-white) 50%, transparent 50%), linear-gradient(90deg, #ffa500 50%, var(--color-white) 50%);
+}
+
+.progress-60 {
+    background-image: -webkit-linear-gradient(left, #ffa500 50%, transparent 50%), -webkit-linear-gradient(36deg, #ffa500 50%, var(--color-white) 50%);
+    background-image: linear-gradient(90deg, #ffa500 50%, transparent 50%), linear-gradient(54deg, #ffa500 50%, var(--color-white) 50%);
+}
+
+.progress-70 {
+    background-image: -webkit-linear-gradient(left, #ffa500 50%, transparent 50%), -webkit-linear-gradient(72deg, #ffa500 50%, var(--color-white) 50%);
+    background-image: linear-gradient(90deg, #ffa500 50%, transparent 50%), linear-gradient(18deg, #ffa500 50%, var(--color-white) 50%);
+}
+
+.progress-80 {
+    background-image: -webkit-linear-gradient(left, #ffa500 50%, transparent 50%), -webkit-linear-gradient(108deg, #ffa500 50%, var(--color-white) 50%);
+    background-image: linear-gradient(90deg, #ffa500 50%, transparent 50%), linear-gradient(-18deg, #ffa500 50%, var(--color-white) 50%);
+}
+
+.progress-90 {
+    background-image: -webkit-linear-gradient(left, #ffa500 50%, transparent 50%), -webkit-linear-gradient(144deg, #ffa500 50%, var(--color-white) 50%);
+    background-image: linear-gradient(90deg, #ffa500 50%, transparent 50%), linear-gradient(-54deg, #ffa500 50%, var(--color-white) 50%);
+}
+
+.progress-100 {
+    background-image: -webkit-linear-gradient(left, #ffa500 50%, transparent 50%), -webkit-linear-gradient(right, #ffa500 50%, var(--color-white) 50%);
+    background-image: linear-gradient(90deg, #ffa500 50%, transparent 50%), linear-gradient(-90deg, #ffa500 50%, var(--color-white) 50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
