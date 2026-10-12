@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Loisir étudiant — plateforme de découverte et d'inscription aux activités de l'UQTR.">
+  <title>Loisir étudiant | Plateforme d’activités</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Navigation principale">
+      <a class="brand" href="#accueil"><span class="brand-mark">L</span><span><strong>Loisir</strong><small>pour les étudiants</small></span></a>
+      <div class="nav-links"><a href="#activites">Activités</a><a href="#fonctionnement">Comment ça marche</a><a href="#apropos">À propos</a></div>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Activer le thème sombre">☾ <span>Sombre</span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero shell" id="accueil">
+      <div class="hero-copy"><p class="eyebrow">Une vie étudiante plus active</p><h1>Trouvez une activité qui vous ressemble.</h1><p class="hero-lead">Découvrez les activités proposées aux étudiants, choisissez vos préférées et rejoignez une communauté qui partage vos passions.</p><div class="hero-actions"><a class="button button-primary" href="#activites">Explorer les activités <span>↓</span></a><a class="button button-ghost" href="#fonctionnement">Voir comment ça marche</a></div><div class="hero-note"><span class="pulse"></span> Inscriptions ouvertes pour la session actuelle</div></div>
+      <div class="hero-visual" aria-label="Aperçu de la plateforme"><div class="floating-card floating-card-top"><span class="mini-icon">✦</span><div><strong>06</strong><small>activités disponibles</small></div></div><div class="activity-orbit"><span>🏊</span><span>🏸</span><span>🥾</span><span>♟</span><div class="orbit-center">L</div></div><div class="floating-card floating-card-bottom"><span class="avatar-stack"><i>MC</i><i>DP</i><i>JP</i></span><div><strong>79</strong><small>étudiants inscrits</small></div></div></div>
+    </section>
+
+    <section class="stats shell" aria-label="Statistiques"><div><strong>06</strong><span>activités proposées</span></div><div><strong>79</strong><span>inscriptions actives</span></div><div><strong>100%</strong><span>pensé pour les étudiants</span></div></section>
+
+    <section class="activities-section shell" id="activites">
+      <div class="section-heading"><div><p class="eyebrow">À vous de choisir</p><h2>Les activités du moment</h2><p>Filtrez la liste et trouvez rapidement une activité qui vous intéresse.</p></div><div class="activity-tools"><label class="search-box"><span>⌕</span><input id="activity-search" type="search" placeholder="Rechercher une activité" aria-label="Rechercher une activité"></label><select id="activity-filter" aria-label="Filtrer les activités"><option value="all">Toutes les activités</option><option value="sport">Sport</option><option value="plein-air">Plein air</option><option value="réflexion">Réflexion</option></select></div></div>
+      <div class="activity-grid" id="activity-grid"></div><p class="empty-state" id="empty-state" hidden>Aucune activité ne correspond à votre recherche.</p>
+    </section>
+
+    <section class="how-section shell" id="fonctionnement"><div class="section-heading centered"><p class="eyebrow">Simple en trois étapes</p><h2>Comment participer ?</h2><p>La plateforme rend l’inscription claire, rapide et accessible.</p></div><div class="steps"><article><span>01</span><div class="step-icon">⌕</div><h3>Explorez</h3><p>Consultez les activités, leur responsable et les places disponibles.</p></article><article><span>02</span><div class="step-icon">✓</div><h3>Inscrivez-vous</h3><p>Choisissez une activité et transmettez vos informations en quelques clics.</p></article><article><span>03</span><div class="step-icon">↗</div><h3>Participez</h3><p>Retrouvez votre groupe et commencez une nouvelle activité.</p></article></div></section>
+
+    <section class="about-section shell" id="apropos"><div class="about-panel"><div><p class="eyebrow">À propos du projet</p><h2>Une vitrine moderne pour un projet PHP/MySQL.</h2><p>Cette version est une démonstration frontend statique déployable sur GitHub Pages. Elle présente l’expérience utilisateur et les interactions principales du projet original.</p></div><div class="stack-list"><div><strong>Frontend</strong><span>HTML · CSS · JavaScript</span></div><div><strong>Backend</strong><span>PHP · MySQL</span></div><div><strong>Fonctions</strong><span>Inscription · authentification · gestion</span></div></div></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="shell footer-inner"><div><a class="brand" href="#accueil"><span class="brand-mark">L</span><span><strong>Loisir</strong><small>pour les étudiants</small></span></a><p>Projet de programmation web et base de données.</p></div><div><span class="footer-label">Projet original</span><a href="https://github.com/mana-coulibaly/TP3-Base-de-Donn-e---HTML-PHP" target="_blank" rel="noopener noreferrer">Voir le dépôt GitHub ↗</a></div></div><div class="shell footer-bottom"><span>© 2024 Mana Coulibaly</span><span>Démo frontend — données fictives</span></div></footer>
+
+  <dialog id="registration-dialog"><button class="dialog-close" id="dialog-close" type="button" aria-label="Fermer">×</button><p class="eyebrow">Inscription à une activité</p><h2 id="dialog-title">Rejoindre l’activité</h2><p class="dialog-intro">Cette démo simule l’inscription. Dans l’application complète, les informations sont enregistrées par le backend PHP/MySQL.</p><form id="registration-form"><label>Nom complet<input name="name" required placeholder="Votre nom et prénom"></label><label>Courriel<input name="email" type="email" required placeholder="vous@exemple.com"></label><label>Motivation <span>(facultatif)</span><textarea name="motivation" rows="3" placeholder="Pourquoi cette activité vous intéresse ?"></textarea></label><button class="button button-primary" type="submit">Confirmer mon inscription</button></form><p class="form-success" id="form-success" hidden>Votre demande a bien été enregistrée dans cette démonstration.</p></dialog>
+  <script src="app.js"></script>
+</body>
+</html>
